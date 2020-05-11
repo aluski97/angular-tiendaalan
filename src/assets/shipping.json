@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Envio por Saur",
+    "time": "Plazo de entrega: 24h",
+    "price": 5.99
+  },
+  {
+    "type": "Carreos Express",
+    "time": "Plazo de entrega: 2-3 días",
+    "price": 3.99
+  },
+  {
+    "type": "Envio estandar por correo",
+    "time": "Plazo de entrega: 7-12 días",
+    "price": 0.99
+  }
+]
