@@ -6,6 +6,7 @@
     {{ product.name }}
     </a>
   </h3>
+  <img src="https://raw.githubusercontent.com/aluski97/angular-tiendaalan/master/src/assets/img/{{product.route}}">
    <p *ngIf="product.model">
     Modelo: {{ product.model }}
   </p>
@@ -17,6 +18,7 @@
   (notify)="onNotify()">
   </app-product-alerts>
 </div>
+
 <br>
 
 <!-- 

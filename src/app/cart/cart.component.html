@@ -2,16 +2,19 @@
 
 <h4>Ha seleccionado usted para comprar estos artículos:</h4>
 
-<p>
-  <a routerLink="/shipping">Metodos de envío</a>
-</p>
-
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
+  <span>{{ item.price}} €</span>
 </div>
+<p>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
-
+    <div>
+      Envio estandar <input id="envio1" name="chooseone" type="radio">
+      Envio Saur <input id="envio2" name="chooseone" type="radio">
+  </div>
+<p>
+  <a routerLink="/shipping">Mas informacion sobre métodos de envío</a>
+</p>
   <div>
     <label for="nombre">
       Nombre y apellidos
