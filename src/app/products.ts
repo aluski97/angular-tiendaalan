@@ -2,7 +2,8 @@ export const products = [
   {
     name: 'Xiaomi Redmi Note 9',
     price: 189,
-    description: 'Lo mejor de Xiaomi con un precio inmejorable'
+    description: 'Lo mejor de Xiaomi con un precio inmejorable',
+    img: '1.jpg'
   },
   {
     name: 'Huawei P30 Lite',
