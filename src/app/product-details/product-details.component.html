@@ -7,6 +7,7 @@
   <h4>{{ product.price}} €</h4>
   <p>{{ product.description }}</p>
 
-  <button (click)="addToCart(product)">Añadir a la cesta</button>
+  <button (click)="addToCart(product)" class="button addcart" routerLink='/'>Añadir a la cesta</button>
+  <button (click)="share()"> Compartir </button>
 </div>
 <br>

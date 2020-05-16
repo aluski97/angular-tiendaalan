@@ -9,6 +9,9 @@ import { CartService } from '../cart.service';
 })
 export class ProductDetailsComponent implements OnInit {
   product;
+    share() {
+    window.alert('¡El producto ha sido compartido con éxito!');
+  }
     addToCart(product) {
     this.cartService.addToCart(product);
     window.alert('Producto añadido a la cesta correctamente');

@@ -6,12 +6,12 @@
     {{ product.name }}
     </a>
   </h3>
-  <img src="https://raw.githubusercontent.com/aluski97/angular-tiendaalan/master/src/assets/img/{{product.route}}">
+  <img   src="https://raw.githubusercontent.com/aluski97/angular-tiendaalan/master/src/assets/img/{{product.route}}" [title]="product.name">
    <p *ngIf="product.model">
     Modelo: {{ product.model }}
   </p>
-   <button (click)="share()">
-    Compartir
+   <button [title]="'Más información sobre ' + product.name" [routerLink]="['/products', productId]">
+    Más información
   </button>
   <app-product-alerts
   [product]="product" 
