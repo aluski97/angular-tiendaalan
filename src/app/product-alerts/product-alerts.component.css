@@ -1,0 +1,11 @@
+.button, button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f73030;
+  color: rgb(245, 245, 245);
+  border: 1;
+}

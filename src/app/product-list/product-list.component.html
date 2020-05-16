@@ -6,9 +6,10 @@
     {{ product.name }}
     </a>
   </h3>
-   <p *ngIf="product.description">
-    Descripción: {{ product.description }}
+   <p *ngIf="product.model">
+    Modelo: {{ product.model }}
   </p>
+ <p> <img src= "'/assets/img/' + product.route" ></p>
    <button (click)="share()">
     Compartir
   </button>

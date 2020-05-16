@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { products } from '../products';
 
 @Component({
@@ -14,7 +13,7 @@ export class ProductListComponent {
     window.alert('¡El producto ha sido compartido con éxito!');
   }
   onNotify() {
-    window.alert('!Este articulo está en oferta!');
+    window.alert('¡Este articulo está en oferta!');
   }
 }
 
