@@ -2,7 +2,7 @@
 
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
-  <img src="assets/img/1.jpg"> {{product.route}}
+  <img src= "'/assets/img/' + product.route" >  {{product.route}}
   <h4>{{ product.price}} €</h4>
   <p>{{ product.description }}</p>
 
