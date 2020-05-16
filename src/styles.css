@@ -129,8 +129,8 @@ app-top-bar subtitle {
 }
 
 /*Footer*/
-app-footer {
-  position:fixed; 
+app-footer  {
+  position:flex; 
   bottom:0; 
   z-index:999999;
   width: 100%;
