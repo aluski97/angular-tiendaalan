@@ -44,7 +44,7 @@ export const products = [
   {
     name: 'Xiaomi Mi Note 10 Pro',
     price: 399,
-    model:'Negro - 128GB + 6GB RAM',
+    model:'Blanco - 128GB + 6GB RAM',
     description: 'Si necesitas un móvil versátil y funcional al mismo tiempo que no quieres renunciar al rendimiento, no te pierdas la oportunidad de hacerte con tu móvil Xiaomi Mi Note 10 en color negro, con 6 GB de RAM y 128 GB de capacidad. Tecnología y componentes de calidad a tu alcance.',
     route:'7.jpg'
   },
