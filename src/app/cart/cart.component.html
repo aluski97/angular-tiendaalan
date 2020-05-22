@@ -1,56 +1,65 @@
-<h2>Cesta</h2>
+<h2>Cesta</h2>  
+
 
 <h4>Ha seleccionado usted para comprar estos artículos:</h4>
-
-<div class="cart-item" *ngFor="let item of items">
+  <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price}} €</span>
 </div>
+<h3><button (click)="clearCart()">Vaciar cesta </button></h3>
+
 <p>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+<p>
     <div>
-      Envio estandar <input id="envio1" name="chooseone" type="radio">
-      Envio Saur <input id="envio2" name="chooseone" type="radio">
+      Envio estándar <input id="envio1" name="chooseone" type="radio" checked>
+      Envio Seur <input id="envio2" name="chooseone" type="radio"> 
   </div>
 <p>
-  <a routerLink="/shipping">Mas informacion sobre métodos de envío</a>
+  <a routerLink="/shipping">Más información sobre métodos de envío</a>
 </p>
   <div>
     <label for="nombre">
       Nombre y apellidos
     </label>
     <input id="nombre" type="text" formControlName="nombre" required>
+    <span> * </span>
   </div>
     <div>
     <label for="direccion">
       Dirección
     </label>
     <input id="direccion" type="text" formControlName="direccion" required>
+    <span> * </span>
   </div>
     <div>
     <label for="codigo_postal">
       Código postal
     </label>
-    <input id="codigo_postal" type="number" formControlName="codigo_postal"required>
-  </div>  <div>
+    <input id="codigo_postal" type="number" formControlName="codigo_postal" required>
+    <span> * </span>
+  </div>  
+  <div>
     <label for="telefono">
       Telefono
     </label>
-    <input id="telefono" type="number" formControlName="telefono" required>
+    <input id="telefono" type="number" formControlName="telefono">
   </div>
     <div>
     <label for="numero_de_tarjeta">
       Número de tarjeta
     </label>
     <input id="numero_de_tarjeta" type="number" formControlName="numero_de_tarjeta" required>
+    <span> * </span>
   </div>
+  <h6> (*) Campos obligatorios</h6>
   <div>
     <label for="condiciones">
       Acepto las condiciones de compra     
-      <input id="condiciones" type="checkbox" formControlName="condiciones">
+      <input id="condiciones" type="checkbox" formControlName="condiciones" required>
     </label>
   </div>
-  
+
   <button class="button" type="submit" [disabled]="checkoutForm.invalid">Realizar pedido</button>
 
 </form>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
@@ -10,6 +10,10 @@ import { FormBuilder } from '@angular/forms';
 export class CartComponent implements OnInit {
   items;
   checkoutForm;
+      clearCart() {
+      this.items = this.cartService.clearCart();
+      window.alert('Cesta vaciada correctamente');
+      }
   constructor(
     private cartService: CartService,
     private formBuilder: FormBuilder,
@@ -27,9 +31,10 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.getItems();
   }
     onSubmit(customerData) {
-    this.items = this.cartService.clearCart();
-    this.checkoutForm.reset();
+          this.checkoutForm.reset();
+          this.items = this.cartService.clearCart();
+          window.alert ('Tu pedido se ha procesado correctamente');
+      
     
-    window.alert ('Tu pedido se ha procesado correctamente');
   }
 }
