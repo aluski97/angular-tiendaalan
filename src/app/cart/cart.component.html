@@ -19,30 +19,30 @@
     <label for="nombre">
       Nombre y apellidos
     </label>
-    <input id="nombre" type="text" formControlName="nombre">
+    <input id="nombre" type="text" formControlName="nombre" required>
   </div>
     <div>
     <label for="direccion">
       Dirección
     </label>
-    <input id="direccion" type="text" formControlName="direccion">
+    <input id="direccion" type="text" formControlName="direccion" required>
   </div>
     <div>
     <label for="codigo_postal">
       Código postal
     </label>
-    <input id="codigo_postal" type="number" formControlName="codigo_postal">
+    <input id="codigo_postal" type="number" formControlName="codigo_postal"required>
   </div>  <div>
     <label for="telefono">
       Telefono
     </label>
-    <input id="telefono" type="number" formControlName="telefono">
+    <input id="telefono" type="number" formControlName="telefono" required>
   </div>
     <div>
     <label for="numero_de_tarjeta">
       Número de tarjeta
     </label>
-    <input id="numero_de_tarjeta" type="number" formControlName="numero_de_tarjeta">
+    <input id="numero_de_tarjeta" type="number" formControlName="numero_de_tarjeta" required>
   </div>
   <div>
     <label for="condiciones">
@@ -51,7 +51,7 @@
     </label>
   </div>
   
-  <button class="button" type="submit">Realizar pedido</button>
+  <button class="button" type="submit" [disabled]="checkoutForm.invalid">Realizar pedido</button>
 
 </form>
 <br>
