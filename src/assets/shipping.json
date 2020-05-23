@@ -1,11 +1,11 @@
 [
   {
-    "type": "Envio Seur",
+    "type": "Envío Seur",
     "time": "Entrega: 24h",
     "price": 3.99
   },
   {
-    "type": "Envio estándar",
+    "type": "Envío estándar",
     "time": "Entrega: 2-3 días",
     "price": 1.99
   }
