@@ -31,9 +31,14 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.getItems();
   }
     onSubmit(customerData) {
+          this.items = this.cartService.getItems();
+          if (this.items==0){
+            window.alert ('¡La cesta está vacía!');
+          } else {
           this.checkoutForm.reset();
           this.items = this.cartService.clearCart();
           window.alert ('Tu pedido se ha procesado correctamente');
+          }
       
     
   }
