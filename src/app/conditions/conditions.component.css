@@ -1,3 +1,15 @@
 h2 {
   text-align: center;
 }
+.visible{
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.invisible{
+    text-align: center;
+    color: rgba(38, 0, 255, 0);
+    font-size: 25px;
+}

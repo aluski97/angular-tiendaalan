@@ -7,7 +7,11 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./conditions.component.css']
 })
 export class ConditionsComponent implements OnInit {
+  showconditions = false;
 
+    changeText(){
+    this.showconditions = !this.showconditions;
+  }
   constructor() { }
 
   ngOnInit() {

@@ -6,6 +6,8 @@
 
 <p>Only Tech se reserva el derecho de denegar y/o suspender el acceso a los servicios prestados en www.onlytech.com por razones de vulneración de la buena fe contractual, incumplimiento de la legislación de aplicación, de las presentes Condiciones Generales de Compra y/o en supuestos de fraude detectados por esta empresa y/o cualquiera de sus proveedores.</p>
 
-<p>Condiciones revisadas a 1 de junio de 2020</p>
+<p [ngClass]="{'visible': showconditions, 'invisible': !showconditions}">Condiciones revisadas a 1 de junio de 2020</p>
+
+<button (click)="changeText()">Mostrar/Ocultar fecha de modificación de condiciones</button>
 
 </body>
